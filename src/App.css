@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px; 
+  color: black;
+}
+
+.chip-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.chip {
+  background-color: #21231a;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.chip span {
+  margin-left: 5px;
+  cursor: pointer;
+  color: red;
+}
+
+input {
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: black;
+}
+
+.item-list {
+  margin-top: 10px;
+}
+
+.item {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #eef4f6;
+  border: 1px solid #998871;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.item:hover {
+  background-color: skyblue;
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .chip-container {
+    width: 100%;
+  }
+}
